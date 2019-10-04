@@ -46,7 +46,7 @@
     [self setViewControllers:controllers animated:YES];
     
     // wait five seconds then call selector
-    [NSTimer scheduledTimerWithTimeInterval:5.0 target:self selector:@selector(setLessViewcontrollers) userInfo:nil repeats:NO];
+    // [NSTimer scheduledTimerWithTimeInterval:5.0 target:self selector:@selector(setLessViewcontrollers) userInfo:nil repeats:NO];
     
 }
 
@@ -87,7 +87,7 @@
 //    ViewController *newViewcontroller = [[ViewController alloc]init];
 //    newViewcontroller.backgroundColor = color;
 
-    UIStoryboard *storyboard = [UIStoryboard storyboardWithName:@"Main" bundle:nil];
+    UIStoryboard *storyboard = [UIStoryboard storyboardWithName:@"MainTV" bundle:nil];
     ViewController *newViewcontroller = [storyboard instantiateViewControllerWithIdentifier:@"PlainViewController"];
     newViewcontroller.backgroundColor = color;
     

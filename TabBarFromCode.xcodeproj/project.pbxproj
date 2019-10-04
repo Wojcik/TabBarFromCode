@@ -7,13 +7,13 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		2D22ECDC2347F8DC00DE5F54 /* MainTV.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2D22ECDB2347F8DC00DE5F54 /* MainTV.storyboard */; };
 		D227D88518665785003D6458 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D227D88418665785003D6458 /* Foundation.framework */; };
 		D227D88718665785003D6458 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D227D88618665785003D6458 /* CoreGraphics.framework */; };
 		D227D88918665785003D6458 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D227D88818665785003D6458 /* UIKit.framework */; };
 		D227D88F18665785003D6458 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = D227D88D18665785003D6458 /* InfoPlist.strings */; };
 		D227D89118665785003D6458 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = D227D89018665785003D6458 /* main.m */; };
 		D227D89518665785003D6458 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = D227D89418665785003D6458 /* AppDelegate.m */; };
-		D227D89818665785003D6458 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D227D89618665785003D6458 /* Main.storyboard */; };
 		D227D89B18665785003D6458 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = D227D89A18665785003D6458 /* ViewController.m */; };
 		D227D89D18665785003D6458 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D227D89C18665785003D6458 /* Images.xcassets */; };
 		D227D8A418665785003D6458 /* XCTest.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D227D8A318665785003D6458 /* XCTest.framework */; };
@@ -35,6 +35,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		2D22ECDB2347F8DC00DE5F54 /* MainTV.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = MainTV.storyboard; sourceTree = "<group>"; };
 		D227D88118665785003D6458 /* TabBarFromCode.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TabBarFromCode.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		D227D88418665785003D6458 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		D227D88618665785003D6458 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
@@ -45,7 +46,6 @@
 		D227D89218665785003D6458 /* TabBarFromCode-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "TabBarFromCode-Prefix.pch"; sourceTree = "<group>"; };
 		D227D89318665785003D6458 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		D227D89418665785003D6458 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
-		D227D89718665785003D6458 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		D227D89918665785003D6458 /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
 		D227D89A18665785003D6458 /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
 		D227D89C18665785003D6458 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
@@ -117,13 +117,13 @@
 			children = (
 				D227D89318665785003D6458 /* AppDelegate.h */,
 				D227D89418665785003D6458 /* AppDelegate.m */,
-				D227D89618665785003D6458 /* Main.storyboard */,
 				D227D89918665785003D6458 /* ViewController.h */,
 				D227D89A18665785003D6458 /* ViewController.m */,
 				D227D8B91866581C003D6458 /* MasterTabBarController.h */,
 				D227D8BA1866581C003D6458 /* MasterTabBarController.m */,
 				D227D89C18665785003D6458 /* Images.xcassets */,
 				D227D88B18665785003D6458 /* Supporting Files */,
+				2D22ECDB2347F8DC00DE5F54 /* MainTV.storyboard */,
 			);
 			path = TabBarFromCode;
 			sourceTree = "<group>";
@@ -214,6 +214,7 @@
 			developmentRegion = English;
 			hasScannedForEncodings = 0;
 			knownRegions = (
+				English,
 				en,
 				Base,
 			);
@@ -235,7 +236,7 @@
 			files = (
 				D227D89D18665785003D6458 /* Images.xcassets in Resources */,
 				D227D88F18665785003D6458 /* InfoPlist.strings in Resources */,
-				D227D89818665785003D6458 /* Main.storyboard in Resources */,
+				2D22ECDC2347F8DC00DE5F54 /* MainTV.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -288,14 +289,6 @@
 			name = InfoPlist.strings;
 			sourceTree = "<group>";
 		};
-		D227D89618665785003D6458 /* Main.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				D227D89718665785003D6458 /* Base */,
-			);
-			name = Main.storyboard;
-			sourceTree = "<group>";
-		};
 		D227D8AC18665785003D6458 /* InfoPlist.strings */ = {
 			isa = PBXVariantGroup;
 			children = (
@@ -324,7 +317,7 @@
 				CLANG_WARN_INT_CONVERSION = YES;
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "iPhone Developer";
 				COPY_PHASE_STRIP = NO;
 				GCC_C_LANGUAGE_STANDARD = gnu99;
 				GCC_DYNAMIC_NO_PIC = NO;
@@ -340,9 +333,10 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 7.1;
 				ONLY_ACTIVE_ARCH = YES;
-				SDKROOT = iphoneos;
+				SDKROOT = appletvos;
+				TARGETED_DEVICE_FAMILY = 3;
+				TVOS_DEPLOYMENT_TARGET = 13.0;
 			};
 			name = Debug;
 		};
@@ -363,7 +357,7 @@
 				CLANG_WARN_INT_CONVERSION = YES;
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "iPhone Developer";
 				COPY_PHASE_STRIP = YES;
 				ENABLE_NS_ASSERTIONS = NO;
 				GCC_C_LANGUAGE_STANDARD = gnu99;
@@ -373,8 +367,9 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 7.1;
-				SDKROOT = iphoneos;
+				SDKROOT = appletvos;
+				TARGETED_DEVICE_FAMILY = 3;
+				TVOS_DEPLOYMENT_TARGET = 13.0;
 				VALIDATE_PRODUCT = YES;
 			};
 			name = Release;
@@ -466,6 +461,7 @@
 				D227D8B518665785003D6458 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		D227D8B618665785003D6458 /* Build configuration list for PBXNativeTarget "TabBarFromCodeTests" */ = {
 			isa = XCConfigurationList;
@@ -474,6 +470,7 @@
 				D227D8B818665785003D6458 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

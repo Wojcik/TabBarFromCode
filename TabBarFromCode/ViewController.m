@@ -12,6 +12,10 @@
 
 @property (strong, nonatomic) IBOutlet UILabel *label;
 
+@property (strong, nonatomic) IBOutlet UIButton *button;
+
+- (IBAction)buttonPressed:(id)sender;
+
 @end
 
 @implementation ViewController
@@ -34,6 +38,10 @@
 {
     [super didReceiveMemoryWarning];
     // Dispose of any resources that can be recreated.
+}
+
+- (void)buttonPressed:(id)sender {
+    NSLog(@"button pressed");
 }
 
 @end
